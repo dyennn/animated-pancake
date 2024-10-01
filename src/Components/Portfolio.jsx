@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/a-laptop.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "desktop with laptop";
 
 /**
  * Project list
@@ -31,29 +31,24 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Pizza Ordering System",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "A terminal-based pizza ordering created using Python during my first 2 months of programming. ",
+    url: "https://github.com/dyennn/pizza-ordering-system",
   },
   {
-    title: "Web Development for Beginners",
+    title: "C & M Hotel App",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A hotel management web application created using HTML, CSS, and JS. This is a group project that I worked on during my second semester in first year in college.",
+    url: "https://github.com/dyennn/candmhotelrestaurant",
   },
   {
-    title: "My Resume Site",
+    title: "FloodWatch App",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "An application that provides timely checking of water levels of certain areas. It also provides a prediction of flooding. (Ongoing)",
+    url: "",
   },
-  {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
-  },
+  
 ];
 
 const Portfolio = () => {
@@ -64,7 +59,13 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              borderRadius: "10px",
+              animation: "1s ease-out 0s 1 slideInLeft",
+            }}
             alt={imageAltText}
           />
         </div>
